@@ -12,7 +12,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate link: http:web-settler.com/posts-slider/
 */
 
-/*  Please do not Modify the code od ths plugin without permission. Thank you */
+/*  Please do not Modify the code of ths plugin without permission. Thank you */
 
 include 'mpsp_cs_post_type.php';
 include 'mpsp_metaboxes.php';
