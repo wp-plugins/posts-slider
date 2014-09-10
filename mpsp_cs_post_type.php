@@ -14,8 +14,7 @@ function mpsp_custom_post_type(){
     'not_found' => __('No Posts Slider found'),
     'not_found_in_trash' => __('No Posts Slider found in trash'),
     'parent_item_colon' => "",
-    'menu_name' => 'Posts Slider',
-
+    'menu_name' => 'Posts Slider'
     );
   $args = array(
     'labels' => $labels,
@@ -27,7 +26,7 @@ function mpsp_custom_post_type(){
     'capability_type' => 'post',
     'query_var' => 'mpsp_slider',
     'menu_icon' => 'dashicons-welcome-add-page',
-    'show_in_menu' => true,
+    'show_in_menu' => true
     );
 
 
