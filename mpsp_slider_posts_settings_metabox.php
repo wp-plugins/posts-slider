@@ -178,28 +178,28 @@ function mpsp_slider_posts_settings($post){
       <h2 align="center">Select layout</h2>
       <label for="mpsp_slide_layout_custom"><img src="<?php echo plugins_url('img/layout-def.png',__FILE__); ?>" width="150px" height"150px"></label>
 
-      <input type="radio" name="mpsp_slide_layout_custom" value="display:none;" style="width:15px;"  <?php checked( "display:none;", $mpsp_slide_layout_custom ); ?>
+      <input disabled type="radio" name="mpsp_slide_layout_custom" value="" style="width:15px;"  <?php checked( "display:none;", $mpsp_slide_layout_custom ); ?>
    checked >
       <br>
 
       <label for="mpsp_slide_layout_custom"><img src="<?php echo plugins_url('img/layout-1.png',__FILE__); ?>" width="150px" height"150px"></label>
-      <input type="radio" name="mpsp_slide_layout_custom"  value='float:left; margin-right:15px;' style="width:15px;"
+      <input type="radio" name="mpsp_slide_layout_custom" checked value='float:left; margin-right:15px;' style="width:15px;"
 
 <?php checked( "float:left; margin-right:15px;", $mpsp_slide_layout_custom ); ?>
       >
           <br>
 
       <label for="mpsp_slide_layout_custom"><img src="<?php echo plugins_url('img/layout-2.png',__FILE__); ?>" width="150px" height"150px"></label>
-      <input type="radio" name="mpsp_slide_layout_custom"
-      value='margin-left:40%;'style="width:15px;" selected     
+      <input disabled type="radio" name="mpsp_slide_layout_custom"
+      value=''style="width:15px;" selected     
 <?php checked( "margin-left:40%;", $mpsp_slide_layout_custom ); ?>
       >
           <br>
           <label for="mpsp_slide_layout_custom"><img src="<?php echo plugins_url('img/layout-3.png',__FILE__); ?>" width="150px" height"150px"></label>
-      <input type="radio" name="mpsp_slide_layout_custom"
+      <input  disabled type="radio" name="mpsp_slide_layout_custom"
 
-      value='float:right;margin-left:15px;' style="width:15px;"     
-<?php checked( "float:right;margin-left:15px;", $mpsp_slide_layout_custom ); ?>
+      value='' style="width:15px;"     
+<?php checked( "", $mpsp_slide_layout_custom ); ?>
 
       >
           <br>
@@ -208,6 +208,7 @@ function mpsp_slider_posts_settings($post){
   </div>
   
 </div>
+<a href="http://web-settler.com/posts-slider/" target="_blank" style='font-size:22px;'>To Unlock all layouts please buy premium Version : Click here</a>
 
 
 

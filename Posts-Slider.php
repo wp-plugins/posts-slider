@@ -2,7 +2,7 @@
 
 /*
 Plugin Name:Posts Slider Free
-Description: Creates  beautiful Slides of your Posts.
+Description: Creates  beautiful Sliders of your Posts.
 Author: Umar Bajwa
 Plugin URI: http://web-settler.com/posts-slider/
 Author URI: http://web-settler.com/posts-slider/

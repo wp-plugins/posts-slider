@@ -1,8 +1,12 @@
 
 <?php echo get_post_meta($id,'mpsp_slide_nav_button_position',true); ?>
 <style>
+.owl-pagination{
+  margin-bottom: -30px;
+}
 .owl-buttons{
-  color:<?php echo get_post_meta($id,'mpsp_slide_nav_button_color',true);?>
+  color:#333333;
+  margin-bottom: -20px;
 }
 
 
@@ -14,7 +18,7 @@
 
 
 
-<div id="mpsp_wrapper" style= " background-color:<?php echo get_post_meta($id,'mpsp_posts_bg_color',true);?>; padding:10px; margin:40px; border-radius:5px; width:<?php echo get_post_meta($id,'mpsp_slide_custom_width',true); ?>;  <?php echo $mpsp_slide_gradient; ?>    ">
+<div id="mpsp_wrapper" style= " background-color:#BDC3C7; padding:10px; margin:40px; border-radius:3px; width:<?php echo get_post_meta($id,'mpsp_slide_custom_width',true); ?>;  <?php echo $mpsp_slide_gradient; ?>    ">
 
 
     <h2 align="center"style="width:100%;
@@ -76,7 +80,7 @@ $mpsp_posts_key = get_post_meta($id,'mpsp_posts_key',true);
 
           while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
     <div> 
-         <h1 id="mpsp_title" align="center" style="font-size:28px;"><a href="<?php the_permalink() ?>" target="_blank" style= "color:<?php echo get_post_meta($id,'mpsp_posts_heading_color',true); ?>;  text-decoration:none;"><?php the_title(); ?>
+         <h1 id="mpsp_title" align="center" style="font-size:28px;"><a href="<?php the_permalink() ?>" target="_blank" style= "color:#333333;  text-decoration:none;"><?php the_title(); ?>
          </a></h1>
          
 	     
@@ -96,7 +100,7 @@ $mpsp_posts_key = get_post_meta($id,'mpsp_posts_key',true);
         
        
         <?php  ?> <!-- Post Featured Image --></div>
-       <a href="<?php the_permalink() ?>" target="_blank" style="text-decoration:none; color:<?php echo get_post_meta($id,'mpsp_posts_description_color',true); ?>;"><p id="mpsp_desc" style="margin:5px;">
+       <a href="<?php the_permalink() ?>" target="_blank" style="text-decoration:none; color:#333333;"><p id="mpsp_desc" style="margin:5px;">
          <?php
 
                $excerpt = get_the_excerpt(__('(more…)'));

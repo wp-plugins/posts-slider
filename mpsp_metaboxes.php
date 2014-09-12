@@ -6,7 +6,7 @@ add_action('add_meta_boxes','mpsp_metaboxes_add');
 
     add_meta_box('mpsp_slider_settings','Slider Settings','mpsp_slider_settings','mpsp_slider','normal','high');
     add_meta_box('mpsp_slider_posts_settings',' Posts Settings','mpsp_slider_posts_settings','mpsp_slider','normal','low');
-    add_meta_box('mpsp_slider_review','Help Us','mpsp_slider_review','mpsp_slider','side','high');
+   // add_meta_box('mpsp_slider_review','Help Us','mpsp_slider_review','mpsp_slider','side','high');
     add_meta_box('mpsp_slider_posts_shortcode','Posts Slider Shortcode','mpsp_slider_posts_shortcode','mpsp_slider','side','high');
     add_meta_box('mpsp_premium_ver_metabox','Get Premium Version','mpsp_premium_ver_metabox','mpsp_slider','side','high');
 

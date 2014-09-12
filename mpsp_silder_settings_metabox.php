@@ -45,23 +45,6 @@ function mpsp_slider_settings($post){
 
       <br>
       <br>
-      <br>
-
-      <label for="mpsp_posts_bg_color">Background Color :</label>
-      <input type="text" class='mpsp-color-picker' name="mpsp_posts_bg_color" value="<?php echo $mpsp_posts_bg_color; ?>">
-      <br>
-      <br>
-      <label for="mpsp_posts_heading_color">Slider Heading Color :</label>
-      <input type="text" class='mpsp-color-picker' name="mpsp_posts_heading_color" value="<?php echo $mpsp_posts_heading_color; ?>">
-      <br>
-      <br>
-
-    <label for="mpsp_posts_description_color">Description Color :</label>
-      <input type="text" class='mpsp-color-picker' name="mpsp_posts_description_color" value="<?php echo $mpsp_posts_description_color; ?>">
-
-      <br>
-      <br>
-      
 
       <label for="mpsp_slide_speed">Slide Speed :</label>
       <input type="number" name="mpsp_slide_speed" value="<?php echo $mpsp_slide_speed; ?>" placeholder="200">
@@ -209,11 +192,7 @@ function mpsp_slider_settings($post){
         >Left</option>
 
       </select>
-      <br>
-      <br>
-      <label for="mpsp_slide_nav_button_color">Navigation Buttons Color :</label>
-      <input type="text" class='mpsp-color-picker' name="mpsp_slide_nav_button_color" value="<?php echo $mpsp_slide_nav_button_color; ?>">
-      <br>
+           <br>
       <br>
       <label for="mpsp_slide_custom_width">Custom Slider Width :</label>
       <input type="text" placeholder="Leave blank for responsive slider" name="mpsp_slide_custom_width" value="<?php echo $mpsp_slide_custom_width; ?>" style="width:190px;">

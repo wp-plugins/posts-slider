@@ -24,6 +24,12 @@ function mpsp_premium_ver_metabox($post){
 	Create Unlimited Posts Sliders.
 </li>
 <li>
+	Add Custom Styling.
+</li>
+<li>
+	Unlock All Layouts.
+</li>
+<li>
 	Use Posts Slider as widget.
 </li>
 <a style='text-decoration: none;' href="http://web-settler.com/posts-slider/" target='_blank'><div id='mpsp_rate_button' style=''>Get Premium Version</div></a>
