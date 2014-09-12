@@ -20,14 +20,11 @@ add_filter('init','mpsp_style');
 
 function mpsp_script(){
   
-	wp_enqueue_script('mpsp_script1',plugins_url('owl-carousel/owl.carousel.js',__FILE__));
+	wp_enqueue_script('mpsp_script1',plugins_url('owl-carousel/owl.carousel.js',__FILE__),array( 'jquery' ));
 
-
-
-wp_enqueue_script("jquery");
 }
+
 add_filter('init','mpsp_script');
-wp_enqueue_script("jquery");
 
 function mpsp_scripts_add() {
 	wp_enqueue_script('jquery');

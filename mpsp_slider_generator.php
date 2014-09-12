@@ -103,9 +103,9 @@ $mpsp_posts_key = get_post_meta($id,'mpsp_posts_key',true);
        <a href="<?php the_permalink() ?>" target="_blank" style="text-decoration:none; color:#333333;"><p id="mpsp_desc" style="margin:5px;">
          <?php
 
-               $excerpt = get_the_excerpt(__('(more…)'));
+               $excerpt = get_the_excerpt();
               echo string_limit_words_mpsp($excerpt,$mpsp_posts_Desc_limit,$string,$word_limit);
-            ?> </p>
+            ?><span style='color:red;'> Read more...</span> </p>
 
             
           
