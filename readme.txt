@@ -3,7 +3,7 @@ Contributors:Umarbajwa,websettler
 Donate link: http://web-settler.com/posts-slider/
 Tags:widget,pages,best carousel slider, best post slider, best responsive slider, best slideshow, best slideshow plugin, carousel slider, excerpt,image, get posts, image, image slider, image slideshow, images, logo scroller, news slider,custom post type, nivo slider, owl slider, popular posts, Post, post slider, post slider plugin, posts, posts slider, recent, recent post, recent post slider, recent posts, responsive carousel, responsive carousel slider, responsive slider, responsive slideshow, royal slider, google,admin, showcase, sidebar slideshow, slider, slideshow, sticky, testimonial scroller, thumbnail, thumbnail slider, ticker, wordpress slideshow, wow slider,shortcode,twitter,sidebar,comments
 Requires at least:3.3 
-Tested up to: 3.9.2
+Tested up to: 4.0
 Stable tag:1.0
 License:GPLv2 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
