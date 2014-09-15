@@ -20,7 +20,6 @@ function mpsp_custom_post_type(){
     'labels' => $labels,
     'description' => 'Create Posts Slider',
     'public' => true,
-    'menu_position' => 10,
     'supports' => array('title','custom_fields'),
     'has_archive' => true,
     'capability_type' => 'post',
