@@ -53,7 +53,7 @@ add_action("load-post-new.php","mpsp_count_user_posts_by_type");
     if (current_user_can( 'edit_posts') and $screen->post_type === 'mpsp_slider') { 
         //Is  admin and all users - so impose the limit
         if($count>=1)
-            header("Location: /wp-content/plugins/post-slider/phuf.php");
+            header("Location: /wp-content/plugins/posts-slider/phuf.php");
             
 
         }
