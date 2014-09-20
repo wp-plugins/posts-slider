@@ -60,7 +60,7 @@ $mpsp_posts_key = get_post_meta($id,'mpsp_posts_key',true);
 
               // WP_Query arguments
                   $args = array (
-                    'post_type'              => get_post_meta($id,'mpsp_post_types',true), 
+                    'post_type'              => 'post', 
                     $mpsp_posts_key          => get_post_meta($id,'mpsp_posts_value',true),
                     'posts_per_page'         => get_post_meta($id,'mpsp_posts_visible',true),
                     'order'                  => get_post_meta($id,'mpsp_posts_order',true),
