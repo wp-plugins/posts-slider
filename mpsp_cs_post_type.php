@@ -15,6 +15,7 @@ function mpsp_custom_post_type(){
     'not_found_in_trash' => __('No Posts Slider found in trash'),
     'parent_item_colon' => "",
     'menu_name' => 'Posts Slider'
+
     );
   $args = array(
     'labels' => $labels,
@@ -52,7 +53,7 @@ add_action("load-post-new.php","mpsp_count_user_posts_by_type");
     if (current_user_can( 'edit_posts') and $screen->post_type === 'mpsp_slider') { 
         //Is  admin and all users - so impose the limit
         if($count>=1)
-            header("Location: /wp-content/plugins/posts-slider/phuf.php");
+            header("Location: /wp-content/plugins/post-slider/phuf.php");
             
 
         }

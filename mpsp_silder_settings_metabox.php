@@ -38,7 +38,15 @@ function mpsp_slider_settings($post){
 
     ?>
    
-    </style>
+  <style type="text/css">
+    #mpsp_span{
+      border: 1px solid grey;
+      padding: 2px;
+      font-size: 11px;
+      margin-left: 5px;
+    }
+
+  </style>
 	<div class='formLayout'> 
     <div id="mpsp_slider_settings">
     <input type='hidden' name='mpsp_slider_id' value='<?php echo $mpsp_postid; ?>'>
@@ -49,48 +57,31 @@ function mpsp_slider_settings($post){
       <label for="mpsp_slide_speed">Slide Speed :</label>
       <input type="number" name="mpsp_slide_speed" value="<?php echo $mpsp_slide_speed; ?>" placeholder="200">
       <br>
-      <br>
 
-    <label for="mpsp_slide_transistion">Select Transition :</label>
+   <p> <label for="mpsp_slide_transistion">Select Transition :</label>
     <select name="mpsp_slide_transistion">
-      <option value="false"
+      <option  value="false"
 
       <?php selected( 'false', $mpsp_slide_transistion); ?> >none</option>
-      <option value="'fade'"
+      <option selected value="'fade'"
 
       <?php selected( "'fade'",$mpsp_slide_transistion ); ?> >fade</option>
-      <option value="'backSlide'"
-      <?php selected( "'backSlide'", $mpsp_slide_transistion ); ?>
-      >backSlide</option>
-      <option value="'goDown'"
-<?php selected( "'goDown'",$mpsp_slide_transistion ); ?>
-
-      >goDown</option>
-      <option value="'fadeUp'"
-<?php selected( "'fadeUp'", $mpsp_slide_transistion ); ?>
-
-      >fadeUp</option>
-
-      </select>
-
-      <br>
-     <br>
+      <option disabled >backSlide</option>
+      <option disabled >goDown</option>
+      <option disabled >fadeUp</option>
+      </select><span id='mpsp_span'><a href='http://web-settler.com/posts-slider/' target='_blank'> This feature is only available in premium version.</span></a></p>
 
     
-      <label for="mpsp_slide_single"> Carousel :</label>
+      <p><label for="mpsp_slide_single"> Carousel :</label>
       <select name="mpsp_slide_single">
-        <option value="false"
-        <?php selected( 'false', $mpsp_slide_single ); ?>
-
-        >Enable </option>
-        <option value="true" 
+        <option disabled>Enable </option>
+        <option selected value="true" 
                 <?php selected( 'true', $mpsp_slide_single ); ?>
 
     >Disable</option>
 
       </select>
-      <br>
-      <br>
+      <span id='mpsp_span'><a href='http://web-settler.com/posts-slider/' target='_blank'> This feature is only available in premium version.</span></a></p>
 
       <label for="mpsp_slide_autoplay">Auto Play :</label>
       <select name="mpsp_slide_autoplay">
@@ -171,29 +162,17 @@ function mpsp_slider_settings($post){
         <option value="true" <?php selected( 'true', $mpsp_slide_navigation ); ?>>Enable</option>
         <option value="false" <?php selected( 'false', $mpsp_slide_navigation ); ?>>Disable</option>
       </select>
-      <br>
-      <br>
 
-            <label for="mpsp_slide_nav_button_position">Navigation Buttons Position :</label>
-      <select name="mpsp_slide_nav_button_position">
-        <option value=""
+           <p> <label for="mpsp_slide_nav_button_position">Navigation Buttons Position :</label>
+      <select  name="mpsp_slide_nav_button_position">
+        <option selected value=""
 <?php selected( "", $mpsp_slide_nav_button_position ); ?>
 
         >Default</option>
-        <option value="<style type='text/css'>.owl-buttons{left:43%;position:relative;}</style>"    
-<?php selected( "<style type='text/css'>.owl-buttons{left:43%;position:relative;}</style>", $mpsp_slide_nav_button_position ); ?>
+        <option disabled >Right</option>
+        <option disabled >Left</option>
 
-
-     >Right</option>
-        <option value="<style type='text/css'> .owl-buttons{ left:-45%; position:relative;}</style>"
-<?php selected( "<style type='text/css'> .owl-buttons{ left:-45%; position:relative;}</style>", $mpsp_slide_nav_button_position ); ?>
-
-
-        >Left</option>
-
-      </select>
-           <br>
-      <br>
+      </select><span id='mpsp_span'><a href='http://web-settler.com/posts-slider/' target='_blank'> This feature is only available in premium version.</span></a></p>
       <label for="mpsp_slide_custom_width">Custom Slider Width :</label>
       <input type="text" placeholder="Leave blank for responsive slider" name="mpsp_slide_custom_width" value="<?php echo $mpsp_slide_custom_width; ?>" style="width:190px;">
       <br>

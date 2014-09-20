@@ -35,30 +35,6 @@ function mpsp_slider_posts_settings($post){
       <br>
       <br>
 
-      <label for="cs_post_types">Select Post Type :</label>
-
-     <?php 
-     $post_types = get_post_types('', 'names');
-
-      echo "<select name='mpsp_post_types'>
-      <option value='' selected( 'select', $mpsp_post_types );>Select</option>
-      ";
-
-
-    foreach($post_types as $post_type) {
-       ?>
-
-      <option value='<?php echo $post_type;?>' <?php selected($post_type, $mpsp_post_types ); ?> ><?php echo $post_type;?> </option>
-      <?php
-     }
-
-      echo "</select>";
-
-     ?>
-      <br>
-      <br>
-
-
       <label for="mpsp_posts_visible">No. of Posts In Slider :</label>
       <input type="number" name="mpsp_posts_visible" value="<?php echo $mpsp_posts_visible; ?>">
       
@@ -77,79 +53,6 @@ function mpsp_slider_posts_settings($post){
         >Descending</option>
 
       </select>
-      <br>
-      <br>
-
-      <label for="mpsp_posts_orderby"  title="Sort retrieved posts by.">Posts Order By :</label >
-      <select name="mpsp_posts_orderby">
-        <option selected value=""
-        >Choose..</option>
-        <option value="none" 
-
-        <?php selected( 'none',$mpsp_posts_orderby ); ?>
-
-        >None</option>
-        <option value="rand"
-        <?php selected( 'rand',$mpsp_posts_orderby ); ?>
-
-        >Random</option>
-        <option value="id"
-        <?php selected( 'id',$mpsp_posts_orderby ); ?>
-
-        >ID</option>
-        <option value="title"
-        <?php selected( 'title',$mpsp_posts_orderby ); ?>
-
-        >Title</option>
-        <option value="name"
-        <?php selected( 'name',$mpsp_posts_orderby ); ?>
->Slug</option>
-        <option value="date"
-        <?php selected( 'date',$mpsp_posts_orderby ); ?>
-
-        >Date - Default</option>
-        <option value="modified"
-        <?php selected( 'modified',$mpsp_posts_orderby ); ?>
-        >Modified Date</option>
-        <option value="parent"
-        <?php selected( 'parent',$mpsp_posts_orderby ); ?>
-
-        >Parent ID</option>
-        <option value="menu_order" <?php selected( 'menu_order',$mpsp_posts_orderby ); ?>>Comment Count</option>>Menu Order</option>
-        <option value="comment_count" <?php selected( 'comment_count',$mpsp_posts_orderby ); ?>>Comment Count</option>
-        
-
-      </select>
-      <br>
-      <br>
-
-
-      <label for="mpsp_posts_key">Get Posts By :</label>
-      <select name="mpsp_posts_key">
-        <option value="">Choose..</option>
-        <option value="category_name"
-<?php selected( "category_name",$mpsp_posts_key ); ?>
-
-        >Category Name</option>
-        <option value="post_name"
-<?php selected( "post_name",$mpsp_posts_key ); ?>
-
-        >Post Name</option>
-        <option value="tag_name"
-<?php selected( "tag_name",$mpsp_posts_key ); ?>
-
-        >Tag Name</option>
-        <option value="author_name"
-<?php selected( "author_name",$mpsp_posts_key ); ?>
-
-        >Author Name</option>
-
-      </select>
-      <br>
-      <br>
-      <label for="mpsp_posts_value">Get Posts By (Value) :</label>
-      <input type="text" name="mpsp_posts_value" value="<?php echo $mpsp_posts_value; ?>" placeholder="i.e category name" style="width:150px;">
-
       <br>
       <br>
       
@@ -179,7 +82,7 @@ function mpsp_slider_posts_settings($post){
       <label for="mpsp_slide_layout_custom"><img src="<?php echo plugins_url('img/layout-def.png',__FILE__); ?>" width="150px" height"150px"></label>
 
       <input disabled type="radio" name="mpsp_slide_layout_custom" value="" style="width:15px;"  <?php checked( "display:none;", $mpsp_slide_layout_custom ); ?>
-   checked >
+   checked ><span id='mpsp_span'><a href='http://web-settler.com/posts-slider/' target='_blank'> This feature is only available in premium version.</span></a>
       <br>
 
       <label for="mpsp_slide_layout_custom"><img src="<?php echo plugins_url('img/layout-1.png',__FILE__); ?>" width="150px" height"150px"></label>
@@ -190,25 +93,18 @@ function mpsp_slider_posts_settings($post){
           <br>
 
       <label for="mpsp_slide_layout_custom"><img src="<?php echo plugins_url('img/layout-2.png',__FILE__); ?>" width="150px" height"150px"></label>
-      <input disabled type="radio" name="mpsp_slide_layout_custom"
-      value=''style="width:15px;" selected     
-<?php checked( "margin-left:40%;", $mpsp_slide_layout_custom ); ?>
-      >
+      <input disabled type="radio" name="mpsp_slide_layout_custom" style="width:15px;">
+      <span id='mpsp_span'><a href='http://web-settler.com/posts-slider/' target='_blank'> This feature is only available in premium version.</span></a>
           <br>
           <label for="mpsp_slide_layout_custom"><img src="<?php echo plugins_url('img/layout-3.png',__FILE__); ?>" width="150px" height"150px"></label>
-      <input  disabled type="radio" name="mpsp_slide_layout_custom"
-
-      value='' style="width:15px;"     
-<?php checked( "", $mpsp_slide_layout_custom ); ?>
-
-      >
+      <input  disabled type="radio" name="mpsp_slide_layout_custom" style="width:15px;" ><span id='mpsp_span'><a href='http://web-settler.com/posts-slider/' target='_blank'> This feature is only available in premium version.</span></a>
           <br>
 
 
   </div>
   
 </div>
-<a href="http://web-settler.com/posts-slider/" target="_blank" style='font-size:22px;'>To Unlock all layouts please buy premium Version : Click here</a>
+<a href="http://web-settler.com/posts-slider/" target="_blank" style='font-size:22px;'>To Unlock all layouts and more amazing features Click here</a>
 
 
 

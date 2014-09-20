@@ -20,6 +20,7 @@ function mpsp_premium_ver_metabox($post){
 	}
 
 </style>
+
 <li>
 	Create Unlimited Posts Sliders.
 </li>
@@ -28,6 +29,18 @@ function mpsp_premium_ver_metabox($post){
 </li>
 <li>
 	Unlock All Layouts.
+</li>
+<li>
+	Unlock All features.
+</li>
+<li>
+	Premium Version Supports Taxanomies.
+</li>
+<li>
+	All Custom Post Types Supported.
+</li>
+<li>
+	Supports WooCommerce Products.
 </li>
 <li>
 	Use Posts Slider as widget.
