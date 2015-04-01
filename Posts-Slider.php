@@ -6,7 +6,7 @@ Description: Creates  beautiful Slides of your Posts.
 Author: Umar Bajwa
 Plugin URI: http://web-settler.com/posts-slider/
 Author URI: http://web-settler.com/posts-slider/
-Version:1.1
+Version:1.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate link: http://web-settler.com/posts-slider/
